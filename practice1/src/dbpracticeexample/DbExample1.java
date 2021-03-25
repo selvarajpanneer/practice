@@ -20,8 +20,7 @@ public class DbExample1 {
 					"jdbc:mysql://localhost:3306/test","ksr94","$elvaDB1");  
 			  
 			Statement stmt=(Statement) con.createStatement();  
-			Statement st= (Statement)con.createStatement();
-			  
+		
 			ResultSet rs=(ResultSet) stmt.executeQuery("select * from student");  
 			while(rs.next())  {
 			al.add(new Student(rs.getInt(2),rs.getString(3),rs.getInt(4),rs.getString(5)));
